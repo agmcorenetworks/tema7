@@ -62,6 +62,23 @@ public class Strings {
 		System.out.println(g.equals(g2));
 		
 		System.out.println(minum);
+		
+		String nombreDeFichero="alumnos.txt";
+		
+		String [] partes=nombreDeFichero.split("\\.");
+		
+		System.out.println("nombre: "+partes[0]);
+		System.out.println("extension: "+partes[1]);
+		
+		String csv="uno;dos;tres;cuatro;5";		
+		String [] elementos=csv.split(";");
+		System.out.println("elementos en el array: "+elementos.length);
 
+		//inmutabilidad de strings:
+		String name="soy alex";
+		name.replace('e', 'i');
+		System.out.println(name);
+		System.out.println(name.replace('e', 'i'));
+		System.out.println(name);
 	}
 }
