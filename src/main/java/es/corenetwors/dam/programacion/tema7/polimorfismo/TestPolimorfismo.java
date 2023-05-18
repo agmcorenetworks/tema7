@@ -10,13 +10,11 @@ public class TestPolimorfismo {
 		e1.setSueldo(500);
 		e1.getNombre();
 		//e1.getSueldo(); //error de compilacion
-		
-		
-		
+				
 		Empleado e2;
 		e2=new Encargado();		
 		e2.setSueldo(500);
-		//e2.doCosasDeEncargado();
+		//e2.doCosasDeEncargado();  //error de compilacion
 		e2.getSueldo();
 		
 		Empleado[] misEmpleados= {e1,e2};
